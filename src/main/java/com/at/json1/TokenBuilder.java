@@ -80,6 +80,10 @@ public class TokenBuilder {
         for (int i = start + 1;; i++) {
             cur = json.charAt(i);
             if(cur == ':'){
+                if(valMode){
+                    anyUse.append(cur);
+                    continue;
+                }
                 valMode = true;
                 kt = new KeyToken(anyUse.toString());
                 anyUse = new StringBuilder();

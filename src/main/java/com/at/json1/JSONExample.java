@@ -54,7 +54,7 @@ public class JSONExample {
         StringBuilder res = new StringBuilder();
         for (ArrayToken arrayToken : aa) {
             String statement = arrayToken.getStatement();
-            res.append(statement).append("\n");
+            res.insert(0,statement + "\n");
         }
         res.append("\n");
         return new String(res);

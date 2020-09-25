@@ -50,7 +50,11 @@ public class ObjectToken extends Token{
             }else if(value instanceof ArrayToken){
                 className = ((ArrayToken) value).getTypeString();
             } else{
+                //System.out.println("?");
+                //System.out.println(key.getIndex());
+                //System.out.println(keys.size());
                 className = value.getType().toString() + "?";
+
             }
             s += className + "\n";
             res.append(s);
