@@ -52,7 +52,11 @@ incorrect: [1,[2]]
 correct: [1,{"a":[1]}]
 ```
 ## 2. How to use
-There is a pom.xml file so you can use maven with some modify(Like my jdk is 13.0,you can change jdk version in pom).
+There is a pom.xml file so you can use maven with a bit modify<br/>
+(Like my jdk is 13.0,you can change jdk version in pom).<br/>
+Or you can just compile them and run Main.class.
+
+The test module is empty.
 1. The args[0] in main is regarded as "Filename",that is the path String of json file.
 <br/>The default file is "./Log.json".
 2. There are few comments for readers,maybe I will complete them later.
